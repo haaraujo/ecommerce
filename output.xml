@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180213 01:27:03.412" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/haraujo/git/ecommerce/Compra_Submarino.robot" id="s1" name="Compra Submarino">
+<test id="s1-t1" name="Remover Produto Do Carrinho">
+<kw type="setup" name="Fazer Login No Submarino" library="Resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:03.965" level="INFO">Opening browser 'chrome' to base url 'https://cliente.submarino.com.br/simple-login/?next=https%3A%2F%2Fwww.submarino.com.br%2F'</msg>
+<status status="PASS" endtime="20180213 01:27:17.306" starttime="20180213 01:27:03.965"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${USUARIO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:17.351" starttime="20180213 01:27:17.308"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:17.351" starttime="20180213 01:27:17.307"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${SENHA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:17.416" starttime="20180213 01:27:17.352"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:17.417" starttime="20180213 01:27:17.352"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:17.460" starttime="20180213 01:27:17.417"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:17.460" starttime="20180213 01:27:17.417"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<msg timestamp="20180213 01:27:17.462" level="INFO">Typing text 'robotframework18@gmail.com' into text field '//*[@id='email-input']'</msg>
+<status status="PASS" endtime="20180213 01:27:17.883" starttime="20180213 01:27:17.461"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:17.883" starttime="20180213 01:27:17.461"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<msg timestamp="20180213 01:27:17.884" level="INFO">Typing text 'Robot2018' into text field '//*[@id='password-input']'</msg>
+<status status="PASS" endtime="20180213 01:27:18.023" starttime="20180213 01:27:17.884"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:18.023" starttime="20180213 01:27:17.884"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:18.025" level="INFO">Clicking element 'css=#login-button'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:27:18.794" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:27:18.794" starttime="20180213 01:27:18.080"></status>
+</kw>
+<msg timestamp="20180213 01:27:18.953" level="FAIL">WebDriverException: Message: unknown error: Element &lt;button id="login-button" type="submit" class="btn btn-primary submit-button  entrar-button"&gt;...&lt;/button&gt; is not clickable at point (600, 367). Other element would receive the click: &lt;iframe title="desafio reCAPTCHA" src="https://www.google.com/recaptcha/api2/bframe?hl=pt-BR&amp;amp;v=v1517812337239&amp;amp;k=6Lecgi4UAAAAADoy8olZEoD8T5dqynjjJajXSQHj&amp;amp;cb=v3lp0pt1f69y#mkruu6cxcbx8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="mkruu6cxcbx8" style="width: 400px; height: 580px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:27:18.953" starttime="20180213 01:27:18.024"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:20.957" level="INFO">Clicking element 'css=#login-button'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:27:21.355" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:27:21.355" starttime="20180213 01:27:20.993"></status>
+</kw>
+<msg timestamp="20180213 01:27:21.356" level="FAIL">WebDriverException: Message: unknown error: Element &lt;button id="login-button" type="submit" class="btn btn-primary submit-button  entrar-button"&gt;...&lt;/button&gt; is not clickable at point (600, 367). Other element would receive the click: &lt;iframe title="desafio reCAPTCHA" src="https://www.google.com/recaptcha/api2/bframe?hl=pt-BR&amp;amp;v=v1517812337239&amp;amp;k=6Lecgi4UAAAAADoy8olZEoD8T5dqynjjJajXSQHj&amp;amp;cb=v3lp0pt1f69y#mkruu6cxcbx8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="mkruu6cxcbx8" style="width: 400px; height: 580px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:27:21.356" starttime="20180213 01:27:20.956"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:23.359" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" endtime="20180213 01:27:23.425" starttime="20180213 01:27:23.358"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:23.425" starttime="20180213 01:27:18.023"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:43.210" starttime="20180213 01:27:23.427"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:43.211" starttime="20180213 01:27:23.426"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:43.211" starttime="20180213 01:27:03.962"></status>
+</kw>
+<kw name="Pesquisar Pelo Produto" library="Resource">
+<arguments>
+<arg>Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:43.251" starttime="20180213 01:27:43.212"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:43.251" starttime="20180213 01:27:43.212"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:43.252" level="INFO">Typing text 'Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw' into text field '//*[@id="h_search-input"]'</msg>
+<status status="PASS" endtime="20180213 01:27:44.219" starttime="20180213 01:27:43.251"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:44.219" starttime="20180213 01:27:43.251"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:44.257" starttime="20180213 01:27:44.221"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:44.257" starttime="20180213 01:27:44.220"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:44.258" level="INFO">Clicking element '//*[@id="h_search-btn"]'.</msg>
+<status status="PASS" endtime="20180213 01:27:49.801" starttime="20180213 01:27:44.258"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:49.801" starttime="20180213 01:27:44.257"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:49.801" starttime="20180213 01:27:43.211"></status>
+</kw>
+<kw name="Remover Produto Do Carrinho" library="Resource">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:50.258" starttime="20180213 01:27:49.804"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:50.258" starttime="20180213 01:27:49.803"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:50.260" level="INFO">Clicking element '//h1[@data-reactid="86"]'.</msg>
+<status status="PASS" endtime="20180213 01:27:58.781" starttime="20180213 01:27:50.259"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:58.781" starttime="20180213 01:27:50.258"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:27:58.818" starttime="20180213 01:27:58.782"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:27:58.818" starttime="20180213 01:27:58.782"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<msg timestamp="20180213 01:27:58.820" level="INFO">Clicking element 'xpath=//*[@id='btn-buy']'.</msg>
+<status status="PASS" endtime="20180213 01:28:04.930" starttime="20180213 01:27:58.819"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:04.930" starttime="20180213 01:27:58.819"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Select From List</arg>
+<arg>${QUANTIDADE}</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>${QUANTIDADE}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180213 01:28:04.932" level="INFO">Selecting option(s) '1' from list '//select[@class="form-control select__quantity"]'.</msg>
+<status status="PASS" endtime="20180213 01:28:05.214" starttime="20180213 01:28:04.931"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:05.214" starttime="20180213 01:28:04.931"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:05.216" level="INFO">Clicking element 'css=.hidden-xs .button--link'.</msg>
+<status status="PASS" endtime="20180213 01:28:05.352" starttime="20180213 01:28:05.215"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:05.352" starttime="20180213 01:28:05.215"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CESTA_VAZIA_MSG}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CESTA_VAZIA_MSG}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:06.940" starttime="20180213 01:28:05.355"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:06.940" starttime="20180213 01:28:05.353"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:06.941" starttime="20180213 01:27:49.802"></status>
+</kw>
+<kw name="Signout Submarino" library="Resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:06.943" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:28:11.910" starttime="20180213 01:28:06.942"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180213 01:28:16.912" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180213 01:28:16.912" starttime="20180213 01:28:11.910"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+<arg>AND</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:16.914" level="INFO">Clicking element '//span[@class="usr-act-text" and text()="Minha conta"]'.</msg>
+<status status="PASS" endtime="20180213 01:28:17.053" starttime="20180213 01:28:16.914"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:17.053" starttime="20180213 01:28:16.913"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:17.055" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:28:17.494" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:28:17.494" starttime="20180213 01:28:17.097"></status>
+</kw>
+<msg timestamp="20180213 01:28:17.495" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:28:17.495" starttime="20180213 01:28:17.055"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:18.497" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<status status="PASS" endtime="20180213 01:28:24.011" starttime="20180213 01:28:18.496"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:24.011" starttime="20180213 01:28:17.054"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:24.011" starttime="20180213 01:28:16.912"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:24.012" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:28:27.964" starttime="20180213 01:28:24.011"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:27.964" starttime="20180213 01:28:06.942"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:28:28.438" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:28:28.438" starttime="20180213 01:28:27.964"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 01:28:28.608" starttime="20180213 01:28:28.439"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:28.608" critical="yes" starttime="20180213 01:27:03.961"></status>
+</test>
+<test id="s1-t2" name="Simular Pagamento Com Cartao De Credito Com 1 Produto No Carrinho">
+<kw type="setup" name="Fazer Login No Submarino" library="Resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:28.667" level="INFO">Opening browser 'chrome' to base url 'https://cliente.submarino.com.br/simple-login/?next=https%3A%2F%2Fwww.submarino.com.br%2F'</msg>
+<status status="PASS" endtime="20180213 01:28:41.935" starttime="20180213 01:28:28.666"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${USUARIO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:42.028" starttime="20180213 01:28:41.937"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:42.028" starttime="20180213 01:28:41.936"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${SENHA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:42.091" starttime="20180213 01:28:42.030"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:42.092" starttime="20180213 01:28:42.029"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:42.142" starttime="20180213 01:28:42.093"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:42.142" starttime="20180213 01:28:42.092"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<msg timestamp="20180213 01:28:42.144" level="INFO">Typing text 'robotframework18@gmail.com' into text field '//*[@id='email-input']'</msg>
+<status status="PASS" endtime="20180213 01:28:42.461" starttime="20180213 01:28:42.144"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:42.461" starttime="20180213 01:28:42.143"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<msg timestamp="20180213 01:28:42.462" level="INFO">Typing text 'Robot2018' into text field '//*[@id='password-input']'</msg>
+<status status="PASS" endtime="20180213 01:28:42.603" starttime="20180213 01:28:42.462"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:42.603" starttime="20180213 01:28:42.461"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:42.604" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" endtime="20180213 01:28:47.696" starttime="20180213 01:28:42.604"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:47.696" starttime="20180213 01:28:42.603"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:58.049" starttime="20180213 01:28:47.697"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:58.049" starttime="20180213 01:28:47.696"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:58.050" starttime="20180213 01:28:28.665"></status>
+</kw>
+<kw name="Pesquisar Pelo Produto" library="Resource">
+<arguments>
+<arg>Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:58.113" starttime="20180213 01:28:58.051"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:58.113" starttime="20180213 01:28:58.051"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:58.114" level="INFO">Typing text 'Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw' into text field '//*[@id="h_search-input"]'</msg>
+<status status="PASS" endtime="20180213 01:28:58.880" starttime="20180213 01:28:58.114"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:58.880" starttime="20180213 01:28:58.113"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:28:58.914" starttime="20180213 01:28:58.881"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:28:58.914" starttime="20180213 01:28:58.881"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<msg timestamp="20180213 01:28:58.915" level="INFO">Clicking element '//*[@id="h_search-btn"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:06.718" starttime="20180213 01:28:58.915"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:06.718" starttime="20180213 01:28:58.914"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:06.719" starttime="20180213 01:28:58.050"></status>
+</kw>
+<kw name="Adicionar 1 Produto No Carrinho" library="Resource">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:06.887" starttime="20180213 01:29:06.721"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:06.887" starttime="20180213 01:29:06.720"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:06.889" level="INFO">Clicking element '//h1[@data-reactid="86"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:15.872" starttime="20180213 01:29:06.888"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:15.872" starttime="20180213 01:29:06.887"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:15.911" starttime="20180213 01:29:15.872"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:15.911" starttime="20180213 01:29:15.872"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:15.912" level="INFO">Clicking element 'xpath=//*[@id='btn-buy']'.</msg>
+<status status="PASS" endtime="20180213 01:29:24.946" starttime="20180213 01:29:15.912"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:24.946" starttime="20180213 01:29:15.911"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Select From List</arg>
+<arg>${QUANTIDADE}</arg>
+<arg>${QUANTIDADE_VALUE}</arg>
+</arguments>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>${QUANTIDADE}</arg>
+<arg>${QUANTIDADE_VALUE}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:24.948" level="INFO">Selecting option(s) '1' from list '//select[@class="form-control select__quantity"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:25.426" starttime="20180213 01:29:24.947"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:25.426" starttime="20180213 01:29:24.947"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:25.427" starttime="20180213 01:29:06.719"></status>
+</kw>
+<kw name="Selecionar Cartao De Credito Como Forma de Pagamento" library="Resource">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_COMPRAR_2}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR_2}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:25.428" level="INFO">Clicking element '//*[@id="buy-button"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:30.687" starttime="20180213 01:29:25.428"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:30.687" starttime="20180213 01:29:25.427"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${TABLE_PAGAMENTOS}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TABLE_PAGAMENTOS}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:37.931" starttime="20180213 01:29:30.688"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:37.931" starttime="20180213 01:29:30.687"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TIPO_PAGAMENTO}' == 'Cartao De Credito'</arg>
+<arg>Click Element</arg>
+<arg>${MODO_PAGAMENTO}</arg>
+<arg>CREDIT_CARD</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:37.932" starttime="20180213 01:29:37.931"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:41.265" starttime="20180213 01:29:37.933"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:41.265" starttime="20180213 01:29:37.933"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+<arg>1234567489878979</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+<arg>1234567489878979</arg>
+</arguments>
+<msg timestamp="20180213 01:29:41.267" level="INFO">Typing text '1234567489878979' into text field '//*[@id="creditCard-cardNumber"]'</msg>
+<status status="PASS" endtime="20180213 01:29:42.033" starttime="20180213 01:29:41.267"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:42.033" starttime="20180213 01:29:41.265"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:42.068" starttime="20180213 01:29:42.034"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:42.069" starttime="20180213 01:29:42.033"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:42.070" level="INFO">Clicking element '//button[@id="payment-credit-card"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:42.194" starttime="20180213 01:29:42.069"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:42.195" starttime="20180213 01:29:42.069"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>//*[@class='form-group ng-scope']//p[.=' Número de cartão inválido ']</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@class='form-group ng-scope']//p[.=' Número de cartão inválido ']</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:29:42.682" starttime="20180213 01:29:42.196"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:42.682" starttime="20180213 01:29:42.195"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:42.682" starttime="20180213 01:29:25.427"></status>
+</kw>
+<kw name="Signout Submarino" library="Resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:42.683" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:29:47.399" starttime="20180213 01:29:42.683"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180213 01:29:52.403" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180213 01:29:52.403" starttime="20180213 01:29:47.400"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+<arg>AND</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:52.406" level="INFO">Clicking element '//span[@class="usr-act-text" and text()="Minha conta"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:52.522" starttime="20180213 01:29:52.405"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:52.522" starttime="20180213 01:29:52.404"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:52.523" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:29:53.005" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:29:53.005" starttime="20180213 01:29:52.615"></status>
+</kw>
+<msg timestamp="20180213 01:29:53.006" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:29:53.006" starttime="20180213 01:29:52.523"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:54.008" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<status status="PASS" endtime="20180213 01:29:59.340" starttime="20180213 01:29:54.007"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:59.340" starttime="20180213 01:29:52.522"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:29:59.341" starttime="20180213 01:29:52.404"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:29:59.341" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:30:03.904" starttime="20180213 01:29:59.341"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:03.904" starttime="20180213 01:29:42.682"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 01:30:04.058" starttime="20180213 01:30:03.904"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:04.058" critical="yes" starttime="20180213 01:28:28.664"></status>
+</test>
+<test id="s1-t3" name="Simular Pagamento Com Cartao De Credito Com 2 Produtos No Carrinho">
+<kw type="setup" name="Fazer Login No Submarino" library="Resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:04.062" level="INFO">Opening browser 'chrome' to base url 'https://cliente.submarino.com.br/simple-login/?next=https%3A%2F%2Fwww.submarino.com.br%2F'</msg>
+<status status="PASS" endtime="20180213 01:30:15.883" starttime="20180213 01:30:04.061"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${USUARIO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:16.064" starttime="20180213 01:30:15.885"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:16.065" starttime="20180213 01:30:15.884"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${SENHA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:16.133" starttime="20180213 01:30:16.069"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:16.133" starttime="20180213 01:30:16.066"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:16.191" starttime="20180213 01:30:16.137"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:16.191" starttime="20180213 01:30:16.134"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${USUARIO}</arg>
+<arg>robotframework18@gmail.com</arg>
+</arguments>
+<msg timestamp="20180213 01:30:16.192" level="INFO">Typing text 'robotframework18@gmail.com' into text field '//*[@id='email-input']'</msg>
+<status status="PASS" endtime="20180213 01:30:16.531" starttime="20180213 01:30:16.191"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:16.531" starttime="20180213 01:30:16.191"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SENHA}</arg>
+<arg>Robot2018</arg>
+</arguments>
+<msg timestamp="20180213 01:30:16.533" level="INFO">Typing text 'Robot2018' into text field '//*[@id='password-input']'</msg>
+<status status="PASS" endtime="20180213 01:30:16.678" starttime="20180213 01:30:16.532"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:16.678" starttime="20180213 01:30:16.531"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:16.679" level="INFO">Clicking element 'css=#login-button'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:30:17.137" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:30:17.138" starttime="20180213 01:30:16.737"></status>
+</kw>
+<msg timestamp="20180213 01:30:17.138" level="FAIL">WebDriverException: Message: unknown error: Element &lt;button id="login-button" type="submit" class="btn btn-primary submit-button  entrar-button"&gt;...&lt;/button&gt; is not clickable at point (600, 367). Other element would receive the click: &lt;iframe title="desafio reCAPTCHA" src="https://www.google.com/recaptcha/api2/bframe?hl=pt-BR&amp;amp;v=v1517812337239&amp;amp;k=6Lecgi4UAAAAADoy8olZEoD8T5dqynjjJajXSQHj&amp;amp;cb=ezzrhv172sk8#hugqt1c0bz2t" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="hugqt1c0bz2t" style="width: 400px; height: 580px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:30:17.138" starttime="20180213 01:30:16.679"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LOGIN}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:19.140" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" endtime="20180213 01:30:19.205" starttime="20180213 01:30:19.140"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:19.205" starttime="20180213 01:30:16.678"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${MSG_LOGIN}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:28.242" starttime="20180213 01:30:19.206"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:28.243" starttime="20180213 01:30:19.205"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:28.243" starttime="20180213 01:30:04.061"></status>
+</kw>
+<kw name="Pesquisar Pelo Produto" library="Resource">
+<arguments>
+<arg>Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:28.280" starttime="20180213 01:30:28.244"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:28.280" starttime="20180213 01:30:28.244"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${CAMPO_PESQUISAR}</arg>
+<arg>${BUSCA}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:28.281" level="INFO">Typing text 'Motor 4 Tempos Diesel Refrigerado Á Água 402cc Tdw' into text field '//*[@id="h_search-input"]'</msg>
+<status status="PASS" endtime="20180213 01:30:29.293" starttime="20180213 01:30:28.281"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:29.293" starttime="20180213 01:30:28.280"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:29.330" starttime="20180213 01:30:29.295"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:29.330" starttime="20180213 01:30:29.294"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_LUPA}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:29.331" level="INFO">Clicking element '//*[@id="h_search-btn"]'.</msg>
+<status status="PASS" endtime="20180213 01:30:33.025" starttime="20180213 01:30:29.331"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:33.025" starttime="20180213 01:30:29.330"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:33.025" starttime="20180213 01:30:28.243"></status>
+</kw>
+<kw name="Adicionar 2 Produto No Carrinho" library="Resource">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:33.250" starttime="20180213 01:30:33.027"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:33.250" starttime="20180213 01:30:33.026"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:33.252" level="INFO">Clicking element '//h1[@data-reactid="86"]'.</msg>
+<status status="PASS" endtime="20180213 01:30:37.783" starttime="20180213 01:30:33.252"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:37.783" starttime="20180213 01:30:33.251"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:37.821" starttime="20180213 01:30:37.784"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:37.821" starttime="20180213 01:30:37.784"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:37.823" level="INFO">Clicking element 'xpath=//*[@id='btn-buy']'.</msg>
+<status status="PASS" endtime="20180213 01:30:47.273" starttime="20180213 01:30:37.822"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:47.273" starttime="20180213 01:30:37.822"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Select From List</arg>
+<arg>${QUANTIDADE}</arg>
+<arg>${QUANTIDADE_VALUE}</arg>
+</arguments>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>${QUANTIDADE}</arg>
+<arg>${QUANTIDADE_VALUE}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:47.276" level="INFO">Selecting option(s) '2' from list '//select[@class="form-control select__quantity"]'.</msg>
+<status status="PASS" endtime="20180213 01:30:47.677" starttime="20180213 01:30:47.275"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:47.678" starttime="20180213 01:30:47.274"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:47.678" starttime="20180213 01:30:33.026"></status>
+</kw>
+<kw name="Selecionar Cartao De Credito Como Forma de Pagamento" library="Resource">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_COMPRAR_2}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_COMPRAR_2}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:47.681" level="INFO">Clicking element '//*[@id="buy-button"]'.</msg>
+<status status="PASS" endtime="20180213 01:30:51.448" starttime="20180213 01:30:47.680"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:51.449" starttime="20180213 01:30:47.680"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${TABLE_PAGAMENTOS}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TABLE_PAGAMENTOS}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:51.566" starttime="20180213 01:30:51.450"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:51.566" starttime="20180213 01:30:51.449"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TIPO_PAGAMENTO}' == 'Cartao De Credito'</arg>
+<arg>Click Element</arg>
+<arg>${MODO_PAGAMENTO}</arg>
+<arg>CREDIT_CARD</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:51.567" starttime="20180213 01:30:51.566"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:55.097" starttime="20180213 01:30:51.568"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:55.097" starttime="20180213 01:30:51.568"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+<arg>1234567489878979</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${CREDIT_CARD_NUMBER}</arg>
+<arg>1234567489878979</arg>
+</arguments>
+<msg timestamp="20180213 01:30:55.099" level="INFO">Typing text '1234567489878979' into text field '//*[@id="creditCard-cardNumber"]'</msg>
+<status status="PASS" endtime="20180213 01:30:55.872" starttime="20180213 01:30:55.098"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:55.873" starttime="20180213 01:30:55.097"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:55.912" starttime="20180213 01:30:55.873"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:55.912" starttime="20180213 01:30:55.873"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BOTAO_PAGAR_CARTAO}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:55.913" level="INFO">Clicking element '//button[@id="payment-credit-card"]'.</msg>
+<status status="PASS" endtime="20180213 01:30:56.058" starttime="20180213 01:30:55.913"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:56.058" starttime="20180213 01:30:55.913"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>//*[@class='form-group ng-scope']//p[.=' Número de cartão inválido ']</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@class='form-group ng-scope']//p[.=' Número de cartão inválido ']</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:30:56.556" starttime="20180213 01:30:56.060"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:56.556" starttime="20180213 01:30:56.059"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:30:56.556" starttime="20180213 01:30:47.679"></status>
+</kw>
+<kw name="Limpar Carrinho" library="Resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:30:56.557" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:31:01.362" starttime="20180213 01:30:56.557"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CART_QTD_ICON}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CART_QTD_ICON}</arg>
+</arguments>
+<status status="PASS" endtime="20180213 01:31:01.571" starttime="20180213 01:31:01.363"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:01.571" starttime="20180213 01:31:01.362"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${CART_QTD_ICON}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CART_QTD_ICON}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:01.572" level="INFO">Clicking element '//span[@class="crt-quantity"]'.</msg>
+<status status="PASS" endtime="20180213 01:31:01.734" starttime="20180213 01:31:01.572"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:01.735" starttime="20180213 01:31:01.571"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//*[@id="crt-box"]/div/a[1]</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="crt-box"]/div/a[1]</arg>
+</arguments>
+<msg timestamp="20180213 01:31:01.737" level="INFO">Clicking element '//*[@id="crt-box"]/div/a[1]'.</msg>
+<status status="PASS" endtime="20180213 01:31:03.668" starttime="20180213 01:31:01.737"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:03.668" starttime="20180213 01:31:01.735"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:03.669" level="INFO">Clicking element 'css=.hidden-xs .button--link'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:31:03.957" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:31:03.958" starttime="20180213 01:31:03.685"></status>
+</kw>
+<msg timestamp="20180213 01:31:03.959" level="FAIL">ValueError: Element locator 'css=.hidden-xs .button--link' did not match any elements.</msg>
+<status status="FAIL" endtime="20180213 01:31:03.959" starttime="20180213 01:31:03.669"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:05.961" level="INFO">Clicking element 'css=.hidden-xs .button--link'.</msg>
+<status status="PASS" endtime="20180213 01:31:06.086" starttime="20180213 01:31:05.960"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:06.087" starttime="20180213 01:31:03.668"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:06.089" level="INFO">Clicking element 'css=.hidden-xs .button--link'.</msg>
+<status status="PASS" endtime="20180213 01:31:06.158" starttime="20180213 01:31:06.088"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:06.158" starttime="20180213 01:31:06.087"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RETIRAR_PRODUTO}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:06.160" level="INFO">Clicking element 'css=.hidden-xs .button--link'.</msg>
+<status status="PASS" endtime="20180213 01:31:06.241" starttime="20180213 01:31:06.159"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:06.241" starttime="20180213 01:31:06.158"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:06.241" starttime="20180213 01:30:56.556"></status>
+</kw>
+<kw name="Signout Submarino" library="Resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:06.242" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:31:10.611" starttime="20180213 01:31:06.242"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180213 01:31:15.613" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180213 01:31:15.614" starttime="20180213 01:31:10.611"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+<arg>AND</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${MINHA_CONTA}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:15.617" level="INFO">Clicking element '//span[@class="usr-act-text" and text()="Minha conta"]'.</msg>
+<status status="PASS" endtime="20180213 01:31:15.776" starttime="20180213 01:31:15.616"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:15.777" starttime="20180213 01:31:15.616"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>3x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:15.779" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180213 01:31:16.225" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 01:31:16.226" starttime="20180213 01:31:15.828"></status>
+</kw>
+<msg timestamp="20180213 01:31:16.227" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20180213 01:31:16.227" starttime="20180213 01:31:15.778"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${USR_SIGNOUT}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:17.229" level="INFO">Clicking element '//a[@class="usr-signout"]'.</msg>
+<status status="PASS" endtime="20180213 01:31:22.689" starttime="20180213 01:31:17.228"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:22.689" starttime="20180213 01:31:15.777"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:22.690" starttime="20180213 01:31:15.614"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME}</arg>
+</arguments>
+<msg timestamp="20180213 01:31:22.690" level="INFO">Opening url 'https://www.submarino.com.br'</msg>
+<status status="PASS" endtime="20180213 01:31:29.885" starttime="20180213 01:31:22.690"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:29.885" starttime="20180213 01:31:06.241"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 01:31:30.168" starttime="20180213 01:31:29.885"></status>
+</kw>
+<status status="PASS" endtime="20180213 01:31:30.168" critical="yes" starttime="20180213 01:30:04.059"></status>
+</test>
+<status status="PASS" endtime="20180213 01:31:30.194" starttime="20180213 01:27:03.414"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Compra Submarino" pass="3">Compra Submarino</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

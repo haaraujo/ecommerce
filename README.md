@@ -44,7 +44,6 @@
 
 
 # Passo a Passo para executar os testes
-* Acessar diretorio "~/Fluxo_Pagamento/Compra_Submarino.robot" via terminal e executar o comando "robot Compra_Submarino.robot"
-* Dentro do diretórios Logs estão os resultado dos testes
+* Acessar diretorio "~/ecommerce/Compra_Submarino.robot" via terminal e executar o comando "robot Compra_Submarino.robot"
 
 

@@ -26,6 +26,9 @@
 
 
 # Instalação Linux (Ubuntu)
+**Install Python 2.7**
+* sudo apt-get install python2.7
+
 **Install pip**
 * sudo apt-get install python-pip
 

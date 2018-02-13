@@ -6,8 +6,6 @@ ${BROWSER}                   chrome
 ${URL}                       https://cliente.submarino.com.br/simple-login/?next=https%3A%2F%2Fwww.submarino.com.br%2F
 ${BOTAO_LUPA}                //*[@id="h_search-btn"]
 ${CAMPO_PESQUISAR}           //*[@id="h_search-input"]
-${LINK_POST}                 //*[@id='Blog1']/div[1]/article/div/div/h3/a
-${TITULO}                    //*[@id='Blog1']/div/article/div[1]/div/h3
 ${USUARIO}                   //*[@id='email-input']
 ${SENHA}                     //*[@id='password-input']
 ${MINHA_CONTA}               //span[@class="usr-act-text" and text()="Minha conta"]
